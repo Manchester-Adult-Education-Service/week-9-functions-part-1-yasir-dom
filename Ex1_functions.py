@@ -46,9 +46,12 @@ print("-------------------------------------------\n"
 # 3. Call both functions to test them.
 #
 # Write your code below:
-
-
-
+def display_header():
+    print("=== LIBRARY BOOK LOAN SYSTEM ===\nManchester Central Library")
+display_header()
+def display_menu():
+    print("1. Record new loan\n2. View all loans\n3. Exit")
+display_menu()
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -80,6 +83,28 @@ print("-------------------------------------------\n"
 # Test it by calling: display_loan("1984", "George Orwell", "Sarah Smith")
 #
 # Write your code below:
+loan_record = {
+    "Title": "1984",
+    "Author": "George Orwell",
+    "Borrower": "Sarah Smith",
+}
+
+def display_loan(loan_record):
+    print("--- Loan Record ---\n")
+    print(f"Title: {loan_record["Title"]}")
+
+display_loan(loan_record)
+
+# -------------------------------------------
+# # Tony's Method
+# def display_loan(title, author, borrower):
+#     print("--- Loan Record ---\n")
+#     print(f"Title: {title}")
+#     print(f"Author: {author}")
+#     print(f"Borrower: {borrower}")
+
+# display_loan("1984", "George Orwell", "Tony")
+# -------------------------------------------
 
 
 
@@ -119,9 +144,39 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+def get_book_title():
+    usr_title = input("Enter book title: ")
+    #print(usr_title)   
+    return usr_title
+   
+def get_book_author():
+    usr_author = input("Enter the book's author: ")
+    #print(usr_author)
+    return usr_author
+
+def get_borrower_name():
+    usr_borrower = input("Enter the borrower's name: ")
+    #print(usr_borrower)
+    return usr_borrower
+    
+def create_loan_record(title, author, borrower):
+    # print(f"title: {title}")    
+    # print(f"author: {author}")
+    # print(f"borrower: {borrower}")
+    book_dict = {
+        "Title": title,
+        "Author": author,
+        "Borrower": borrower,
+    }
+    return book_dict
 
 
+book_title = get_book_title()
+book_author = get_book_author()
+book_borrower = get_borrower_name()
 
+rec1 = create_loan_record(book_title, book_author, book_borrower)
+print(rec1)
 # -------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
@@ -161,9 +216,34 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+loan_records = ["get_loan_record", ]
 
 
+def get_book_title():
+    usr_title = input("Enter book title: ")
+    #print(usr_title)   
+    return usr_title
+   
+def get_book_author():
+    usr_author = input("Enter the book's author: ")
+    #print(usr_author)
+    return usr_author
 
+def get_borrower_name():
+    usr_borrower = input("Enter the borrower's name: ")
+    #print(usr_borrower)
+    return usr_borrower
+    
+def create_loan_record(title, author, borrower):
+    print(f"title: {title}")    
+    print(f"author: {author}")
+    print(f"borrower: {borrower}")
+
+book_title = get_book_title()
+book_author = get_book_author()
+book_borrower = get_borrower_name()
+
+create_loan_record(book_title, book_author, book_borrower)
 # -------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
