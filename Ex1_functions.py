@@ -46,9 +46,12 @@ print("-------------------------------------------\n"
 # 3. Call both functions to test them.
 #
 # Write your code below:
-
-
-
+def display_header():
+    print("=== LIBRARY BOOK LOAN SYSTEM ===\nManchester Central Library")
+display_header()
+def display_menu():
+    print("1. Record new loan\n2. View all loans\n3. Exit")
+display_menu()
 
 # -------------------------------------------
 # SWAP COMPUTERS
