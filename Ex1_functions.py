@@ -144,8 +144,31 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+def get_book_title():
+    usr_title = input("Enter book title: ")
+    #print(usr_title)   
+    return usr_title
+   
+def get_book_author():
+    usr_author = input("Enter the book's author: ")
+    #print(usr_author)
+    return usr_author
 
+def get_borrower_name():
+    usr_borrower = input("Enter the borrower's name: ")
+    #print(usr_borrower)
+    return usr_borrower
+    
+def create_loan_record(title, author, borrower):
+    print(f"title: {title}")    
+    print(f"author: {author}")
+    print(f"borrower: {borrower}")
 
+book_title = get_book_title()
+book_author = get_book_author()
+book_borrower = get_borrower_name()
+
+create_loan_record(book_title, book_author, book_borrower)
 
 # -------------------------------------------
 # SWAP COMPUTERS
