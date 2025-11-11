@@ -83,6 +83,28 @@ print("-------------------------------------------\n"
 # Test it by calling: display_loan("1984", "George Orwell", "Sarah Smith")
 #
 # Write your code below:
+loan_record = {
+    "Title": "1984",
+    "Author": "George Orwell",
+    "Borrower": "Sarah Smith",
+}
+
+def display_loan(loan_record):
+    print("--- Loan Record ---\n")
+    print(f"Title: {loan_record["Title"]}")
+
+display_loan(loan_record)
+
+# -------------------------------------------
+# # Tony's Method
+# def display_loan(title, author, borrower):
+#     print("--- Loan Record ---\n")
+#     print(f"Title: {title}")
+#     print(f"Author: {author}")
+#     print(f"Borrower: {borrower}")
+
+# display_loan("1984", "George Orwell", "Tony")
+# -------------------------------------------
 
 
 
